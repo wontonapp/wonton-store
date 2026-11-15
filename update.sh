@@ -40,12 +40,12 @@ plugins=(
   wontonapp/wonton-plugin-hermes@v0.7.4
   wontonapp/wonton-plugin-openclaw@v0.2.1
   geraldpeng6/wonton-plugin-zcode@v0.1.3
-  wontonapp/wonton-agents/agents/omp@omp/v0.1.5
-  wontonapp/wonton-agents/agents/codex@codex/v0.1.2
-  wontonapp/wonton-agents/agents/claude-code@claude-code/v0.1.2
-  wontonapp/wonton-agents/agents/dsh@dsh/v0.1.3
-  wontonapp/wonton-agents/agents/opencode@opencode/v0.1.2
-  wontonapp/wonton-agents/agents/qwen-code@qwen-code/v0.1.2
+  wontonapp/wonton-agents/agents/omp@omp/v0.1.9
+  wontonapp/wonton-agents/agents/codex@codex/v0.1.6
+  wontonapp/wonton-agents/agents/claude-code@claude-code/v0.1.6
+  wontonapp/wonton-agents/agents/dsh@dsh/v0.1.7
+  wontonapp/wonton-agents/agents/opencode@opencode/v0.1.6
+  wontonapp/wonton-agents/agents/qwen-code@qwen-code/v0.1.6
   wontonapp/wonton-plugins/proxy@proxy/v0.1.3
   wontonapp/wonton-plugins/excalidraw@excalidraw/v0.1.1
   wontonapp/wonton-plugins/penpot@penpot/v0.1.1
