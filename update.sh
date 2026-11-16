@@ -8,18 +8,18 @@ set -euo pipefail
 here="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 core="${WONTON_CORE:-wonton-core}"
 plugins=(
-  wontonapp/wonton-plugins/autobangumi@autobangumi/v0.1.1
+  wontonapp/wonton-plugins/autobangumi@autobangumi/v0.1.2
   wontonapp/wonton-plugins/vllm@vllm/v0.1.1
   wontonapp/wonton-plugins/radarr@radarr/v0.1.1
   wontonapp/wonton-plugin-minecraft@v0.1.0
   wontonapp/wonton-plugins/bazarr@bazarr/v0.1.1
-  wontonapp/wonton-plugins/lidarr@lidarr/v0.1.1
+  wontonapp/wonton-plugins/lidarr@lidarr/v0.1.2
   wontonapp/wonton-plugins/sonarr@sonarr/v0.1.1
   wontonapp/wonton-plugins/n8n@n8n/v0.1.2
-  wontonapp/wonton-plugins/sillytavern@sillytavern/v0.1.1
+  wontonapp/wonton-plugins/sillytavern@sillytavern/v0.1.2
   wontonapp/wonton-plugins/node-red@node-red/v0.1.1
   wontonapp/wonton-plugins/qinglong@qinglong/v0.1.1
-  wontonapp/wonton-plugins/open-notebook@open-notebook/v0.1.1
+  wontonapp/wonton-plugins/open-notebook@open-notebook/v0.1.2
   wontonapp/wonton-plugins/astrbot@astrbot/v0.1.1
   wontonapp/wonton-plugins/searxng@searxng/v0.1.1
   wontonapp/wonton-plugins/navidrome@navidrome/v0.1.2
@@ -40,31 +40,31 @@ plugins=(
   wontonapp/wonton-plugin-hermes@v0.7.4
   wontonapp/wonton-plugin-openclaw@v0.2.1
   geraldpeng6/wonton-plugin-zcode@v0.1.3
-  wontonapp/wonton-agents/agents/omp@omp/v0.1.5
-  wontonapp/wonton-agents/agents/codex@codex/v0.1.2
-  wontonapp/wonton-agents/agents/claude-code@claude-code/v0.1.2
-  wontonapp/wonton-agents/agents/dsh@dsh/v0.1.3
-  wontonapp/wonton-agents/agents/opencode@opencode/v0.1.2
-  wontonapp/wonton-agents/agents/qwen-code@qwen-code/v0.1.2
+  wontonapp/wonton-agents/agents/omp@omp/v0.1.9
+  wontonapp/wonton-agents/agents/codex@codex/v0.1.6
+  wontonapp/wonton-agents/agents/claude-code@claude-code/v0.1.6
+  wontonapp/wonton-agents/agents/dsh@dsh/v0.1.7
+  wontonapp/wonton-agents/agents/opencode@opencode/v0.1.6
+  wontonapp/wonton-agents/agents/qwen-code@qwen-code/v0.1.6
   wontonapp/wonton-plugins/proxy@proxy/v0.1.3
   wontonapp/wonton-plugins/excalidraw@excalidraw/v0.1.1
   wontonapp/wonton-plugins/penpot@penpot/v0.1.1
   wontonapp/wonton-plugins/homebox@homebox/v0.2.0
-  wontonapp/wonton-plugins/gitea@gitea/v0.2.0
+  wontonapp/wonton-plugins/gitea@gitea/v0.2.1
   wontonapp/wonton-plugins/copyparty@copyparty/v0.1.1
   wontonapp/wonton-plugins/changedetection@changedetection/v0.1.1
   wontonapp/wonton-plugins/bookstack@bookstack/v0.1.1
-  wontonapp/wonton-plugins/cloudreve@cloudreve/v0.1.1
+  wontonapp/wonton-plugins/cloudreve@cloudreve/v0.1.2
   wontonapp/wonton-plugins/kavita@kavita/v0.1.1
   wontonapp/wonton-plugins/koel@koel/v0.2.0
   wontonapp/wonton-plugins/sftpgo@sftpgo/v0.2.0
   wontonapp/wonton-plugins/trilium@trilium/v0.1.1
-  wontonapp/wonton-plugins/home-assistant@home-assistant/v0.2.1
+  wontonapp/wonton-plugins/home-assistant@home-assistant/v0.2.2
   wontonapp/wonton-plugins/audiobookshelf@audiobookshelf/v0.2.0
   wontonapp/wonton-plugins/romm@romm/v0.2.0
-  wontonapp/wonton-plugins/prowlarr@prowlarr/v0.2.0
+  wontonapp/wonton-plugins/prowlarr@prowlarr/v0.2.1
   wontonapp/wonton-plugins/tubearchivist@tubearchivist/v0.2.0
-  wontonapp/wonton-plugins/flood@flood/v0.1.1
+  wontonapp/wonton-plugins/flood@flood/v0.1.2
   wontonapp/wonton-plugins/komga@komga/v0.1.1
   wontonapp/wonton-plugins/openlist@openlist/v0.1.1
   wontonapp/wonton-plugins/frigate@frigate/v0.1.1
@@ -80,25 +80,25 @@ plugins=(
   wontonapp/wonton-plugins/radicale@radicale/v0.1.1
   wontonapp/wonton-plugins/drawio@drawio/v0.1.1
   geraldpeng6/wonton-plugin-kiwix@v0.1.1
-  wontonapp/wonton-plugins/music-assistant@music-assistant/v0.1.1
+  wontonapp/wonton-plugins/music-assistant@music-assistant/v0.1.2
   wontonapp/wonton-plugins/calibre-web-automated@calibre-web-automated/v0.1.3
   wontonapp/wonton-plugins/mosquitto@mosquitto/v0.1.1
-  wontonapp/wonton-plugins/homebridge@homebridge/v0.1.1
+  wontonapp/wonton-plugins/homebridge@homebridge/v0.1.2
   wontonapp/wonton-plugins/grocy@grocy/v0.1.1
   wontonapp/wonton-plugins/donetick@donetick/v0.1.1
   wontonapp/wonton-plugins/ghostfolio@ghostfolio/v0.1.1
   wontonapp/wonton-plugins/wallos@wallos/v0.1.1
   wontonapp/wonton-plugins/gramps-web@gramps-web/v0.1.1
   wontonapp/wonton-plugins/reactive-resume@reactive-resume/v0.1.2
-  wontonapp/wonton-plugins/luanti@luanti/v0.1.1
-  wontonapp/wonton-plugins/halo@halo/v0.1.1
+  wontonapp/wonton-plugins/luanti@luanti/v0.1.2
+  wontonapp/wonton-plugins/halo@halo/v0.1.2
   wontonapp/wonton-plugins/esphome@esphome/v0.1.1
   wontonapp/wonton-plugins/dawarich@dawarich/v0.1.1
   geraldpeng6/wonton-plugin-mtranserver@v0.1.1
   wontonapp/wonton-plugins/grist@grist/v0.1.1
-  wontonapp/wonton-plugins/glance@glance/v0.1.2
-  wontonapp/wonton-plugins/ezbookkeeping@ezbookkeeping/v0.1.2
-  wontonapp/wonton-plugins/convertx@convertx/v0.1.1
+  wontonapp/wonton-plugins/glance@glance/v0.1.3
+  wontonapp/wonton-plugins/ezbookkeeping@ezbookkeeping/v0.1.3
+  wontonapp/wonton-plugins/convertx@convertx/v0.1.2
   wontonapp/wonton-plugins/razzia@razzia/v0.1.1
   wontonapp/wonton-plugins/spliit@spliit/v0.1.2
   wontonapp/wonton-plugins/wger@wger/v0.1.1
@@ -106,7 +106,7 @@ plugins=(
   wontonapp/wonton-plugins/traccar@traccar/v0.1.3
   wontonapp/wonton-plugins/scanservjs@scanservjs/v0.1.1
   wontonapp/wonton-plugins/rsshub@rsshub/v0.1.1
-  wontonapp/wonton-plugins/neko@neko/v0.1.0
+  wontonapp/wonton-plugins/neko@neko/v0.1.1
   geraldpeng6/wonton-plugin-agent-orchestrator@v0.1.2
 )
 
