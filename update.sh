@@ -99,6 +99,7 @@ plugins=(
   wontonapp/wonton-plugins/scanservjs@scanservjs/v0.1.1
   wontonapp/wonton-plugins/rsshub@rsshub/v0.1.1
   wontonapp/wonton-plugins/neko@neko/v0.1.1
+  wontonapp/wonton-plugins/scrutiny@scrutiny/v0.1.0
 )
 
 work="$(mktemp -d "$here/.update.XXXXXX")"
