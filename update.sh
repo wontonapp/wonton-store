@@ -37,7 +37,7 @@ plugins=(
   wontonapp/wonton-plugins/open-webui@open-webui/v0.2.2
   wontonapp/wonton-plugins/vane@vane/v0.2.1
   wontonapp/wonton-plugins/ollama@ollama/v0.1.2
-  wontonapp/wonton-plugin-hermes@v0.7.6
+  wontonapp/wonton-plugin-hermes@v0.8.2
   wontonapp/wonton-plugins/proxy@proxy/v0.1.3
   wontonapp/wonton-plugins/excalidraw@excalidraw/v0.1.1
   wontonapp/wonton-plugins/penpot@penpot/v0.1.1
