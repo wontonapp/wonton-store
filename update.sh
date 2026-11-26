@@ -24,11 +24,11 @@ plugins=(
   wontonapp/wonton-plugins/searxng@searxng/v0.1.1
   wontonapp/wonton-plugins/navidrome@navidrome/v0.1.2
   wontonapp/wonton-plugins/paperless-ngx@paperless-ngx/v0.1.3
-  geraldpeng6/wonton-plugin-immich@v0.3.6
+  wontonapp/wonton-plugins/immich@immich/v0.3.7
   wontonapp/wonton-plugins/syncthing@syncthing/v0.1.2
   wontonapp/wonton-plugins/samba@samba/v0.1.3
-  geraldpeng6/wonton-plugin-files@v0.2.3
-  geraldpeng6/wonton-plugin-browser@v0.1.1
+  wontonapp/wonton-plugins/files@files/v0.2.4
+  wontonapp/wonton-plugins/browser@browser/v0.1.2
   wontonapp/wonton-plugins/memos@memos/v0.1.5
   wontonapp/wonton-plugins/miniflux@miniflux/v0.1.3
   wontonapp/wonton-plugins/filebrowser@filebrowser/v0.1.4
@@ -71,7 +71,7 @@ plugins=(
   wontonapp/wonton-plugins/ente@ente/v0.1.1
   wontonapp/wonton-plugins/radicale@radicale/v0.1.1
   wontonapp/wonton-plugins/drawio@drawio/v0.1.1
-  geraldpeng6/wonton-plugin-kiwix@v0.1.1
+  wontonapp/wonton-plugins/kiwix@kiwix/v0.1.2
   wontonapp/wonton-plugins/music-assistant@music-assistant/v0.1.2
   wontonapp/wonton-plugins/calibre-web-automated@calibre-web-automated/v0.1.3
   wontonapp/wonton-plugins/mosquitto@mosquitto/v0.1.1
@@ -100,6 +100,7 @@ plugins=(
   wontonapp/wonton-plugins/rsshub@rsshub/v0.1.1
   wontonapp/wonton-plugins/neko@neko/v0.1.1
   wontonapp/wonton-plugins/scrutiny@scrutiny/v0.1.0
+  wontonapp/wonton-plugins/comfyui@comfyui/v0.1.2
 )
 
 work="$(mktemp -d "$here/.update.XXXXXX")"
